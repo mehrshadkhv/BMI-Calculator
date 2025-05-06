@@ -1,0 +1,2 @@
+C:/Users/asus/AndroidStudioProjects/BMI_Calculator/android/app/.cxx/Debug/1x4m1k2s/x86/CMakeFiles/edit_cache.dir
+C:/Users/asus/AndroidStudioProjects/BMI_Calculator/android/app/.cxx/Debug/1x4m1k2s/x86/CMakeFiles/rebuild_cache.dir

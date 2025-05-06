@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "C:\\FlutterSDK\\packages\\flutter_tools\\gradle\\src\\main\\groovy\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\asus\\AndroidStudioProjects\\BMI_Calculator\\android\\app\\.cxx\\Debug\\1x4m1k2s\\armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\asus\\AndroidStudioProjects\\BMI_Calculator\\android\\app\\.cxx\\Debug\\1x4m1k2s\\armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
