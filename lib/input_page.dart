@@ -21,6 +21,7 @@ class _InputPageState extends State<InputPage> {
 
   Gender selectedGender = Gender.male;
   int height = 180;
+  int weight = 60;
 
   @override
   Widget build(BuildContext context) {
@@ -116,7 +117,7 @@ class _InputPageState extends State<InputPage> {
               ),
             ),
           ),
-          const Expanded(
+          Expanded(
             child: Row(
               children: [
                 Expanded(
@@ -125,18 +126,27 @@ class _InputPageState extends State<InputPage> {
                     cardChild: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'WEIGHT',
-                          style: TextStyle(
-                            fontSize: 18.0,
-                            color: Color(0xFF8D8E98),
-                          ),
+                          style: KLabelTextStyle,
+                        ),
+                        Text(
+                          weight.toString(),
+                          style: KNumberTextStyle,
+                        ),
+                        const Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                          RoundIconButton(icon: FontAwesomeIcons.minus,),
+                          SizedBox(width: 10.0,),
+                          RoundIconButton(icon: FontAwesomeIcons.plus,),  
+                          ],
                         ),
                       ],
                     ),
                   ),
                 ),
-                Expanded(
+                const Expanded(
                   child: ReusableCard(
                     colour: KActiveCardColour,
                     cardChild: Column(
@@ -168,5 +178,27 @@ class _InputPageState extends State<InputPage> {
         ],
       ),
     );
+  }
+}
+
+
+class RoundIconButton extends StatelessWidget {
+  const RoundIconButton({super.key,required this.icon});
+
+  final IconData icon;
+
+  @override
+  Widget build(BuildContext context) {
+    return RawMaterialButton(
+      elevation: 6.0,
+      constraints: const BoxConstraints.tightFor(
+        width: 56.0,
+        height: 56.0,
+      ),
+      onPressed: (){},
+      shape: const CircleBorder(),
+      fillColor: const Color(0xFF4C4F5E),
+      child: Icon(icon),
+      );
   }
 }
