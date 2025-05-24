@@ -14,3 +14,7 @@ const KBottomContainerHeight = 80.0;
 const KActiveCardColour = Color(0xFF1D1E33);
 const KInactiveCardColour = Color(0xFF111328);
 const KBottomContainerColour = Color(0xFFEB1555);
+const KLargeButtonTextStyle = TextStyle(
+  fontSize: 25.0,
+  fontWeight: FontWeight.bold,
+);

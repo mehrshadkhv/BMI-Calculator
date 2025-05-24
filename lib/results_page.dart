@@ -1,13 +1,29 @@
 import 'package:flutter/material.dart';
 
 class ResultsPage extends StatelessWidget {
+  const ResultsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI Calculator'),
+        title: const Text('BMI Calculator'),
       ),
-      body: Text('Results Page'),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Expanded(
+            child: Container(
+              child: const Text('Your Result'),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+        ],
+      ),
     );
   }
 }
